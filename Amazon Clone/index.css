@@ -1,0 +1,320 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  border: border-box;
+}
+
+.navbar{
+  height: 60px;
+  background-color:#0F1111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  }
+
+  .nav-logo{
+    height: 50px;
+    width: 100px;
+  }
+
+  .logo img{
+    height: 50px;
+    width: 100%;
+  }
+  
+  .border{
+    border: 2px solid transparent;
+  }
+
+  .border:hover{
+    border: 1.5px solid white;
+    cursor: pointer;
+  }
+
+  /* navbar box2 css */
+
+  .add-first{
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+  }
+
+  .add-second{
+    font-size: 1 rem;
+    margin-left: 3px;
+  }
+
+  .add-icon{
+    display: flex;
+    align-items: center;
+  }
+
+   /* navbar box3 css */
+   .nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 5px;
+   }
+
+   .nav-search:hover{
+    border: 2px solid orange;
+   } 
+
+   .search-select{
+    background-color: #f3f3f3;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; 
+    text-align: center;
+    border: none;
+   }
+
+   .search-input{
+    width: 100%; /*occupied all avilable space*/
+    font-size: 1rem;
+    border: none;
+   }
+
+   .search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-size: 1.2rem; 
+    color: black;
+   }
+
+   /* navbar box4 css */
+   span{
+    font-size: 0.7rem;
+    font-weight: 700;
+   }
+
+ /* navbar box4 css */
+   .nav-cart i{
+    font-size: 30px;
+   }
+
+   .nav-cart{
+     font-size: 0.85rem;
+     font-weight: 700;
+   }
+
+
+   /* Panel CSS */
+.panel{
+  height: 40px;
+  background-color: #222f3d;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.panel-options p{
+  display: inline; /*note here we use inline property rather than flex*/
+  margin-left: 14px;
+}
+
+.panel-options{
+  width:70%;
+  font-size: 0.85rem;
+  }
+
+  .panel-deals{
+    font-size: 0.85rem; /*size 14 =0.85rem*/
+    font-weight: 700;
+  }
+
+  /* START OF HERO SECTION */
+  .hero-section img {
+    width: 95%; /* Reduce the width of the image (adjust as needed) */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensure the image is fully visible within the set size */
+    display: block; /* Remove any inline spacing */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  
+
+  .hero-message {  
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;   
+  }
+
+  .hero-message p{
+    margin-bottom: 150px;
+    background-color: white;
+    color: black;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .hero-message a{
+    color: #007185;
+  }
+
+  /* Shop Section */
+  .shop-section {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+    flex-wrap: wrap; /* Allows the boxes to wrap to the next line if necessary */
+}
+
+.box {
+    border: 2px solid black;
+    height: 350px;
+    width: 23%;
+    background-color: white;  
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column; /* Ensures content inside stacks vertically */
+    align-items: center; /* Centers content horizontally */
+    overflow: hidden; /* Ensures no overflow beyond the container */
+    padding-bottom: 0; /* Ensures no extra padding at the bottom */
+}
+
+.box:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
+  transition: all 0.3s ease-in;
+}
+
+.box-img1 {
+    height: 240px; /* Fixed height for the image container */
+    width: 100%; /* Full width for the image container */
+    overflow: hidden; /* Hide any overflow from the image */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers the image within the box */
+    margin-bottom: 0; /* Removes any extra margin at the bottom of the image */
+}
+
+.box-img1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    border-radius: 5px; /* Optional: Adds rounded corners to the image */
+}
+
+.box-img1 img:hover {
+  cursor: pointer;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  filter: brightness(1.1); /* Brighten the image slightly on hover */
+  transition: all 0.3s ease-in;
+}
+
+.box-content {
+    text-align: center; /* Centers the text within the content box */
+    padding: 10px; /* Adds padding around the text */
+     display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the text vertically */
+}
+
+.box-content h3 {
+    margin: 10px 0; /* Adds margin around the heading */
+}
+
+.box-content p {
+    color: #007185;
+    font-weight: bold; /* Makes the text stand out more */
+    font-size: 1rem; /* Ensures text size is consistent */
+    padding: 10px;
+}
+
+.box-content p:hover {
+  color: #ff9900; /* Change text color on hover */
+  cursor: pointer;
+}
+
+.box-content h3:hover {
+  color: #ff9900; /* Change heading color on hover */
+}
+
+/* Footer CSS */
+footer{
+  margin-top: 15px;
+}
+.foot-panel1{
+  background-color: #374751;
+  color:white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.foot-panel2{
+  background-color: #222f3d;
+  color: white;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+ul{
+  margin-top: 20px;
+}
+.foot-panel2 ul li{
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 10px;
+  color: #dddddd;
+}
+.foot-panel3{
+  background-color: #222f3d;
+  color: white;
+  border-top: 0.5px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+  background-size: cover;
+  height: 50px;
+  width: 100px;
+}
+
+.foot-panel4 .pages {
+  background-color: #222f3d;
+  color: white;
+  height: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.foot-panel4 .pages ul {
+  list-style: none; /* Remove default list bullets */
+  padding: 0; 
+  margin: 0; 
+  display: flex; 
+}
+
+.foot-panel4 .pages li {
+  margin: 0 10px; /* Add spacing between list items */
+}
+
+.copyright{
+  height: 50px;
+  color: white;
+  background-color: black; 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;  
+}
+
+.copyright p{
+  display: flex;
+  justify-content: center;
+}
